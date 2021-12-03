@@ -1,4 +1,5 @@
-﻿namespace Aula128_Sobreposicao.Entities
+﻿/* >>> CLASSE BUSINESSACCOUNT <<< */
+namespace Aula128_Sobreposicao.Entities
 {
     class BusinessAccount : Account
     {

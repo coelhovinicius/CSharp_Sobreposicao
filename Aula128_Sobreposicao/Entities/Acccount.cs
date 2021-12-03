@@ -1,4 +1,5 @@
-﻿namespace Aula128_Sobreposicao.Entities
+﻿/* >>> CLASSE ACCOUNT <<< */
+namespace Aula128_Sobreposicao.Entities
 {
     class Account
     {
@@ -17,9 +18,9 @@
             Balance = balance;
         }
 
-        public void Withdraw(double amount)
+        public virtual void Withdraw(double amount) // VIRTUAL permite a sobreposicao pelo OVERRIDE
         {
-            Balance -= amount;
+            Balance -= amount + 5.0; // Taxa de 5.0 para cada saque da conta-corrente
         }
 
         public void Deposit(double amount)
